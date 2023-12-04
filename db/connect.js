@@ -1,4 +1,5 @@
 const mongoose = require('mongoose')
+require('newrelic');
 
 const connectDB = (url) => {
   return mongoose.connect(url, {

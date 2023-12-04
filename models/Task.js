@@ -1,4 +1,5 @@
 const mongoose = require('mongoose')
+require('newrelic');
 
 const TaskSchema = new mongoose.Schema({
   name: {

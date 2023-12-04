@@ -4,9 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon -r newrelic app.js",
-    "dev": "nodemon -r newrelic app.js"
-  
+    "start": "NEW_RELIC_APP_NAME=Node-Deploy1 NEW_RELIC_LICENSE_KEY=6c5fef94291c7f60b0002c83ce98a9d1FFFFNRAL node -r newrelic app.js",
+    "dev_start":   "NEW_RELIC_APP_NAME=Node-Deploy1 NEW_RELIC_LICENSE_KEY=6c5fef94291c7f60b0002c83ce98a9d1FFFFNRAL nodemon -r newrelic app.js"
   },
   "keywords": [],
   "author": "",
